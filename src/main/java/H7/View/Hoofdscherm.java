@@ -1,7 +1,7 @@
-package Webshop.View;
-import Webshop.App.Boundary;
-import Webshop.Model.Webshop;
-import Webshop.App.App;
+package H7.View;
+import H7.App.Boundary;
+import H7.Model.Webshop;
+import H7.App.App;
 
 public class Hoofdscherm implements Boundary {
 

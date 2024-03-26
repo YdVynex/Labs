@@ -1,4 +1,4 @@
-package Past.training;
+package H.iets;
 
 public class Bank {
     public Bank(String naam) {

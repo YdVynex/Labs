@@ -1,4 +1,4 @@
-package Webshop.Model;
+package H7.Model;
 
 import java.util.ArrayList;
 

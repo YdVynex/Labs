@@ -1,11 +1,11 @@
-package Webshop.repos;
+package H7.repos;
 
-import Webshop.Model.Account;
+import H7.Model.Account;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static Webshop.Model.Item.itemList;
+import static H7.Model.Item.itemList;
 
 
 public class AccountRepo {

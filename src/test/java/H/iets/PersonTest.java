@@ -1,9 +1,7 @@
-package Past.training;
+package H.iets;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import Past.training.Gender;
-import Past.training.Person;
 
 public class PersonTest {
     @Test

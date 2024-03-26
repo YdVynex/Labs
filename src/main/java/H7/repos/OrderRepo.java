@@ -1,5 +1,5 @@
-package Webshop.repos;
-import Webshop.Model.Order;
+package H7.repos;
+import H7.Model.Order;
 
 
 public class OrderRepo {

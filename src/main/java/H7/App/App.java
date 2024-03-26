@@ -1,7 +1,7 @@
-package Webshop.App;
+package H7.App;
 
-import Webshop.View.Hoofdscherm;
-import Webshop.repos.AccountRepo;
+import H7.View.Hoofdscherm;
+import H7.repos.AccountRepo;
 
 import java.util.Scanner;
 

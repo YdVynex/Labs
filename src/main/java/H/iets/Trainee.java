@@ -1,4 +1,4 @@
-package Past.training;
+package H.iets;
 
 public class Trainee {
         public String firstName ;

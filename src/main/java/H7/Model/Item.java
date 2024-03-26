@@ -1,12 +1,9 @@
-package Webshop.Model;
+package H7.Model;
 
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Item {
     public static HashMap<Integer,BigDecimal> priceList = new HashMap<Integer, BigDecimal>();

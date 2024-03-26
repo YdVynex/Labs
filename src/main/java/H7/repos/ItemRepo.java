@@ -1,13 +1,13 @@
-package Webshop.repos;
+package H7.repos;
 
-import Webshop.Model.Webshop;
+import H7.Model.Webshop;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static Webshop.Model.Item.*;
+import static H7.Model.Item.*;
 
 
 public class ItemRepo {

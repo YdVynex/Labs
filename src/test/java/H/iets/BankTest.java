@@ -1,7 +1,5 @@
-package Past.training;
+package H.iets;
 
-import Past.training.AccountManager;
-import Past.training.Bank;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
