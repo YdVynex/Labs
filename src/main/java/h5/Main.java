@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Bigger b = new Bigger(5, 6);
         int number = b.greatest();
-        Factorial f = new Factorial(4);
+        Factorial f = new Factorial(5);
         f.calculate();
     }
 }
