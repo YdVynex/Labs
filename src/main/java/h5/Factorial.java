@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Factorial {
-    private final int i;
+    private int i;
     public Factorial(int i) {
         this.i = i;
     }
@@ -14,5 +14,12 @@ public class Factorial {
             sum = (sum * u);
         }
         System.out.println(sum);
+    }
+    public int cRecursion(int x){
+        int a = 1;
+        if(x != 0){
+            a = x * cRecursion(--x);
+        }
+        return a;
     }
 }
