@@ -1,4 +1,4 @@
-package H.iets;
+package hiets;
 
 public class Person {
     public String name;

@@ -1,4 +1,4 @@
-package H.iets;
+package hiets;
 
 public class Bank {
     public Bank(String naam) {

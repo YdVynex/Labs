@@ -1,4 +1,4 @@
-package H.iets;
+package hiets;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

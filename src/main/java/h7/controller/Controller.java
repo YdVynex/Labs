@@ -1,4 +1,4 @@
-package h7.Controller;
+package h7.controller;
 
 public class Controller {
 

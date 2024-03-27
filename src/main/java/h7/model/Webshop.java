@@ -1,6 +1,6 @@
-package h7.Model;
+package h7.model;
 
-import static h7.Model.Item.*;
+import static h7.model.Item.*;
 
 
 public class Webshop {

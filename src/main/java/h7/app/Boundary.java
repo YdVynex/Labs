@@ -1,4 +1,4 @@
-package h7.App;
+package h7.app;
 
 public interface Boundary {
     void start();

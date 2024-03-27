@@ -1,5 +1,5 @@
 package h7.repos;
-import h7.Model.Order;
+import h7.model.Order;
 
 
 public class OrderRepo {

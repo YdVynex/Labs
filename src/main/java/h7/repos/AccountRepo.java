@@ -1,11 +1,11 @@
 package h7.repos;
 
-import h7.Model.Account;
+import h7.model.Account;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static h7.Model.Item.itemList;
+import static h7.model.Item.itemList;
 
 
 public class AccountRepo {
