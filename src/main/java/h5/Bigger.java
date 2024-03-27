@@ -1,8 +1,8 @@
 package h5;
 
 public class Bigger {
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
     public Bigger(int x, int y){
         this.x = x;
