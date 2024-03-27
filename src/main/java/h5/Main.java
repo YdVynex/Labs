@@ -8,7 +8,7 @@ public class Main {
 
         Factorial f = new Factorial(5);
         f.calculate();
-        int fRecursion = f.cRecursion(3);
+        int fRecursion = f.cRecursion(4);
         System.out.println(fRecursion);
     }
 }
