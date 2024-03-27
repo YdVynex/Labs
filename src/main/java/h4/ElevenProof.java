@@ -13,11 +13,13 @@ public class ElevenProof {
         ArrayList<Integer> divisableNumber = new ArrayList<>();
         int increasingNumber = 8;
         char[] selectInt = accountNumber.toCharArray();
+
         for (int i = 1; i < 10; i++) {
             int select = Character.getNumericValue(selectInt[increasingNumber]);
             increasingNumber--;
             divisableNumber.add(select * (i));
         }
+
         int sum = 0;
         for (int num : divisableNumber) {
             sum += num;
