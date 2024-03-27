@@ -1,7 +1,5 @@
-package H4;
+package h4;
 
-import java.util.*;
-import java.io.*;
 import java.util.ArrayList;
 
 public class ElevenProof {
@@ -10,27 +8,27 @@ public class ElevenProof {
     public ElevenProof(String accountNumber) {
         this.accountNumber = accountNumber;
     }
-    public int action() {
+
+    public void action() {
         ArrayList<Integer> divisableNumber = new ArrayList<>();
-        int increasingNumber = -1;
+        int increasingNumber = 8;
         char[] selectInt = accountNumber.toCharArray();
-        for (int i = 8; i > 0; i--) {
-            ++increasingNumber;
+        for (int i = 1; i < 10; i++) {
             int select = Character.getNumericValue(selectInt[increasingNumber]);
-            divisableNumber.add(select * (i+1));
+            increasingNumber--;
+            divisableNumber.add(select * (i));
         }
         int sum = 0;
         for (int num : divisableNumber) {
             sum += num;
         }
+
         if (sum % 11 == 0) {
             System.out.println(sum);
-            System.out.println("Legit BankAccount!");
+            System.out.println("Legit BankAccount! Divisible by 11.");
         } else {
             System.out.println(sum);
-            System.out.println("Not legit BankAccount!");
-            ;
-        }
-        return sum;
+            throw new IllegalArgumentException("Not Legit BankAccount! Not Divisible by 11.");
+            }
     }
 }

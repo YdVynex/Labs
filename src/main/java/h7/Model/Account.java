@@ -1,4 +1,4 @@
-package H7.Model;
+package h7.Model;
 
 import java.util.ArrayList;
 

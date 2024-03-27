@@ -1,4 +1,4 @@
-package H7.repos;
+package h7.repos;
 
 public class WebshopRepo {
 
