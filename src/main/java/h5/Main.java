@@ -10,5 +10,11 @@ public class Main {
         f.calculate();
         int fRecursion = f.cRecursion(4);
         System.out.println(fRecursion);
+
+        //If time permits gedeelte//
+        System.out.println(" ");
+
+        Fibo fi = new Fibo(6);
+        fi.runFibo();
     }
 }
