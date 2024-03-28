@@ -1,7 +1,7 @@
-package h7.view;
-import h7.app.Boundary;
-import h7.model.Webshop;
-import h7.app.App;
+package h789.view;
+import h789.app.Boundary;
+import h789.model.Webshop;
+import h789.app.App;
 
 public class Hoofdscherm implements Boundary {
 

@@ -1,7 +1,7 @@
-package h7.app;
+package h789.app;
 
-import h7.view.Hoofdscherm;
-import h7.repos.AccountRepo;
+import h789.view.Hoofdscherm;
+import h789.repos.AccountRepo;
 
 import java.util.Scanner;
 
