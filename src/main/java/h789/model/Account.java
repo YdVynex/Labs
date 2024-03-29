@@ -69,4 +69,8 @@ public class Account {
     public void finalize(){
         System.out.println("HET DOET IETS");
     }
+
+    public void greet(){
+        System.out.println("Hello, my name is " + name);
+    }
 }
