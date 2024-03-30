@@ -4,7 +4,7 @@ import static h789.model.Android.level;
 
 public interface Chargeable {
     public default int charge(int amount){
-        if(level + amount < 101){
+        if(level + amount < 100){
             level = level + amount;
         }
         else {
