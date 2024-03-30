@@ -10,7 +10,7 @@ public class Account {
 
     public ArrayList<Integer> listOrders = new ArrayList<Integer>();
 
-    public Account(String naam){
+    public Account(String naam) {
         name = naam;
         residence = null;
         gender = null;
@@ -18,7 +18,8 @@ public class Account {
         System.out.println("Order ID created:");
         System.out.println(ID);
     }
-    public Account(String naam, String plaats){
+
+    public Account(String naam, String plaats) {
         name = naam;
         residence = plaats;
         gender = null;
@@ -26,7 +27,8 @@ public class Account {
         System.out.println("Order ID created:");
         System.out.println(ID);
     }
-    public Account(String naam, String plaats, String Gender){
+
+    public Account(String naam, String plaats, String Gender) {
         name = naam;
         residence = plaats;
         gender = Gender;
@@ -36,20 +38,21 @@ public class Account {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         System.out.println(name + "(" + residence + ")" + " is a " + gender);
         return null;
     }
 
     @Override
-    public boolean equals(Object a){
-        if(a == this){return true;}
+    public boolean equals(Object a) {
+        if (a == this) {
+            return true;
+        }
 
-        if(a instanceof Account acc) {
+        if (a instanceof Account acc) {
             if (acc.name.equals(this.name) && acc.gender == this.gender && acc.ID == this.ID) {
                 return true;
-            }
-            else {
+            } else {
                 return false;
             }
         }
@@ -57,7 +60,7 @@ public class Account {
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         double hashCodeName = name.hashCode();
         double hashCodeGender = gender.hashCode();
         double hashCodeTotal = hashCodeGender * hashCodeName;
@@ -66,11 +69,8 @@ public class Account {
     }
 
     @Override
-    public void finalize(){
+    public void finalize() {
         System.out.println("HET DOET IETS");
     }
-
-    public void greet(){
-        System.out.println("Hello, my name is " + name);
-    }
 }
+
