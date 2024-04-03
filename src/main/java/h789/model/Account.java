@@ -37,11 +37,11 @@ public class Account {
         System.out.println(ID);
     }
 
-    @Override
-    public String toString() {
+    //@Override
+    /*public String toString() {
         System.out.println(name + "(" + residence + ")" + " is a " + gender);
         return null;
-    }
+    }*/
 
     @Override
     public boolean equals(Object a) {
@@ -72,5 +72,40 @@ public class Account {
     public void finalize() {
         System.out.println("HET DOET IETS");
     }
+
+    public static class HistoryRecord {
+        public String description;
+
+        public HistoryRecord(String s) {
+            description = s;
+        }
+
+        @Override
+        public String toString() {
+            ;
+            return description;
+        }
+        public ArrayList<String> history = new ArrayList<String>();
+
+        public void addHistory(String descr) {
+            history.add(descr);
+            int positie = history.size() - 1;
+            System.out.println("History description added! Position of description is: " + positie);
+        }
+
+        public void printHistory() {
+            System.out.println(history.toString());
+        }
+
+        public Human createSubHuman() {
+            return new Human() {
+                @Override
+                public void greet() {
+                    System.out.println("Sub is the best");
+                }
+            };
+        }
+    }
 }
+
 
