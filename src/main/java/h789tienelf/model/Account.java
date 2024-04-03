@@ -105,7 +105,7 @@ public class Account {
         }
 
         public Human createSubHuman() {
-            return new Human() {
+            return new Human("Subhuman") {
                 @Override
                 public void greet() {
                     System.out.println("Sub is the best");
