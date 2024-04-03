@@ -1,13 +1,13 @@
-package h789.repos;
+package h789tienelf.repos;
 
-import h789.model.Webshop;
+import h789tienelf.model.Webshop;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static h789.model.Item.*;
+import static h789tienelf.model.Item.*;
 
 
 public class ItemRepo {

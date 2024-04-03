@@ -1,6 +1,6 @@
-package h789.model;
+package h789tienelf.model;
 
-import static h789.model.Android.level;
+import static h789tienelf.model.Android.level;
 
 public interface Chargeable {
     public default int charge(int amount){

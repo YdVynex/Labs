@@ -1,6 +1,6 @@
-package h789.model;
+package h789tienelf.model;
 
-import static h789.model.Item.*;
+import static h789tienelf.model.Item.*;
 
 
 public class Webshop {

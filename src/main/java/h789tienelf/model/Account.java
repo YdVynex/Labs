@@ -1,6 +1,11 @@
-package h789.model;
+package h789tienelf.model;
 
+import h12.MyAnnotation;
+import h12.MyAnnotation2;
+
+import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Account {
     private final String name;
@@ -37,11 +42,11 @@ public class Account {
         System.out.println(ID);
     }
 
-    //@Override
-    /*public String toString() {
+    @Override
+    public String toString() {
         System.out.println(name + "(" + residence + ")" + " is a " + gender);
         return null;
-    }*/
+    }
 
     @Override
     public boolean equals(Object a) {
@@ -73,6 +78,7 @@ public class Account {
         System.out.println("HET DOET IETS");
     }
 
+    @MyAnnotation
     public static class HistoryRecord {
         public String description;
 
@@ -87,12 +93,13 @@ public class Account {
         }
         public ArrayList<String> history = new ArrayList<String>();
 
+        @MyAnnotation2
         public void addHistory(String descr) {
             history.add(descr);
             int positie = history.size() - 1;
             System.out.println("History description added! Position of description is: " + positie);
         }
-
+        @MyAnnotation
         public void printHistory() {
             System.out.println(history.toString());
         }
@@ -104,6 +111,12 @@ public class Account {
                     System.out.println("Sub is the best");
                 }
             };
+        }
+    }
+    public void getAnnotations(){
+        Method[] methodes = Account.HistoryRecord.class.getMethods();
+        for(Method i : methodes){
+            System.out.println(i.getName()+ " " + Arrays.toString(i.getAnnotations()));
         }
     }
 }

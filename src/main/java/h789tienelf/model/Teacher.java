@@ -1,4 +1,4 @@
-package h789.model;
+package h789tienelf.model;
 
 public class Teacher extends Person{
     public final String name = "Employee3";

@@ -1,4 +1,4 @@
-package h789.model;
+package h789tienelf.model;
 
 public class Employee extends Person{
     public void greet(){
