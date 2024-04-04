@@ -1,4 +1,4 @@
-package h13;
+package h1314;
 
 import h789tienelf.model.Human;
 
@@ -18,5 +18,8 @@ public class House {
             b.greet();
         };
         return null;
+    }
+    public <T> void copy(List<T> OG, List<? super T> NEW){
+        NEW.addAll(OG);
     }
 }

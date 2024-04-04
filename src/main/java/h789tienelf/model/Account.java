@@ -6,6 +6,7 @@ import h12.MyAnnotation2;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class Account {
     private final String name;
@@ -14,6 +15,7 @@ public class Account {
     private final String gender;
 
     public ArrayList<Integer> listOrders = new ArrayList<Integer>();
+    public static HashSet<Double> hashes = new HashSet<>();
 
     public Account(String naam) {
         name = naam;
@@ -69,9 +71,16 @@ public class Account {
         double hashCodeName = name.hashCode();
         double hashCodeGender = gender.hashCode();
         double hashCodeTotal = hashCodeGender * hashCodeName;
-        System.out.println(hashCodeTotal);
-        return 0;
+        hashes.add(hashCodeName);
+        System.out.println("Total is: " + hashCodeTotal);
+        System.out.println("Name is: " + hashCodeName);
+        return 1;
     }
+    public void giveAllHashCodes(){
+        System.out.println("All HashCodes: ");
+        System.out.println(hashes);
+    }
+
 
     @Override
     public void finalize() {
