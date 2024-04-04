@@ -74,11 +74,11 @@ public class Account {
         hashes.add(hashCodeName);
         System.out.println("Total is: " + hashCodeTotal);
         System.out.println("Name is: " + hashCodeName);
-        return 1;
+        return 0;
     }
-    public void giveAllHashCodes(){
+    public void giveAllHashCodes(HashSet<Double> h){
         System.out.println("All HashCodes: ");
-        System.out.println(hashes);
+        System.out.println(h);
     }
 
 

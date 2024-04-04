@@ -29,6 +29,6 @@ public class Main {
         alleHash.add(een);
         alleHash.add(twee);
         alleHash.add(drie);
-        Nr3.giveAllHashCodes();
+        Nr3.giveAllHashCodes(alleHash);
     }
 }
