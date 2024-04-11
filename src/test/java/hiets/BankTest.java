@@ -3,6 +3,7 @@ package hiets;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -30,5 +31,12 @@ class BankTest {
         when(mockAccountManager.add(any())).thenReturn(true);
         sut.setBankAccount(5, 10, 2);
         verify(mockAccountManager).add(any());
+    }
+    @Test
+    void testCaptureArgsWithCaptor(){
+        ArgumentCaptor<String> arg = ArgumentCaptor.forClass(String.class);
+        doNothing().when(mockAccountManager).setString(arg.capture());
+        mockAccountManager.setString("2fgsf");
+        System.out.println(arg.getValue());
     }
 }

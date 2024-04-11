@@ -2,6 +2,9 @@ package hiets;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
+
+import static org.mockito.Mockito.doNothing;
 
 public class PersonTest {
     @Test
@@ -15,4 +18,6 @@ public class PersonTest {
         Assertions.assertEquals(46, p.getAge());
         Assertions.assertEquals("All humans are created equal", p.universalRights);
     }
+
+
 }
