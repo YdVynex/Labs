@@ -4,6 +4,7 @@ import h12.MyAnnotation;
 import h12.MyAnnotation2;
 
 import java.lang.reflect.Method;
+import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -16,6 +17,7 @@ public class Account {
 
     public ArrayList<Integer> listOrders = new ArrayList<Integer>();
     public static HashSet<Double> hashes = new HashSet<>();
+    public ArrayList<Account> listAccounts = new ArrayList<>();
 
     public Account(String naam) {
         name = naam;
@@ -42,6 +44,13 @@ public class Account {
         ID = (int) ((double) Math.random() * 100000);
         System.out.println("Order ID created:");
         System.out.println(ID);
+    }
+
+    public void addAcc(Account a){
+        listAccounts.add(a);
+    }
+    public AbstractList<Account> print(){
+        return listAccounts;
     }
 
     @Override
